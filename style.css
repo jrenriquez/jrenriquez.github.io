@@ -114,3 +114,45 @@ footer {
     border-top: 1px solid #ddd;
     margin-top: 20px;
 }
+
+/* Accordion Button Styles */
+.accordion {
+    background-color: #f1f1f1;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.accordion:hover {
+    background-color: #ddd;
+}
+
+.accordion.active {
+    background-color: #ccc;
+}
+
+/* Accordion Panel Styles */
+.panel {
+    padding: 15px;
+    display: none; /* Panels are initially closed */
+    background-color: white;
+    border-left: 2px solid #ddd;
+    overflow: hidden;
+}
+
+/* Journal Styling */
+.journal {
+    color: #4CAF50; /* Nicer green color */
+    font-size: 1em;
+    margin: 5px 0 10px 0;
+    padding-left: 10px;
+    font-style: italic;
+}
+
