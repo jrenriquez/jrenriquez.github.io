@@ -94,11 +94,9 @@ header h2 {
 }
 
 .bio-image img {
-    width: 250px; /* Ensures the image scales to fill the column width */
-    max-width: 250px;
+    width: 250px;
     height: auto;
     border: 2px solid #ddd;
-    margin-bottom: 10px;
 }
 
 .bio-image figcaption {
