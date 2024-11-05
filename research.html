@@ -33,9 +33,9 @@
             <button class="accordion" aria-expanded="false" aria-controls="panel-publication-1">Mass political information on social media: Facebook ads, electorate saturation, and electoral accountability in Mexico</button>
             <p class="journal"><em>Journal of the European Economic Association, 22(4), August 2024, p. 1678–1722</em></p>
             <p class="links">
-                [<a href="https://bit.ly/Saturation_JEEA" target="_blank">Download PDF</a>] 
-                [<a href="https://bit.ly/3ceQLe1" target="_blank">Slides</a>] 
-                [<a href="https://bit.ly/41YrXge" target="_blank">Replication</a>] 
+                [<a href="https://bit.ly/Saturation_JEEA" target="_blank">Download PDF</a>]
+                [<a href="https://bit.ly/3ceQLe1" target="_blank">Slides</a>]
+                [<a href="https://bit.ly/41YrXge" target="_blank">Replication</a>]
                 [<a href="https://www.socialscienceregistry.org/trials/3135" target="_blank">Pre-registration</a>]
                 [<a href="https://voxdev.org/topic/institutions-political-economy/can-social-media-be-harnessed-bolster-electoral-accountability" target="_blank">Coverage at VoxDev</a>]
             </p>
@@ -45,23 +45,7 @@
             </div>
         </div>
 
-        <!-- Example of Adding Another Publication -->
-        <!--
-        <div class="publication">
-            <button class="accordion" aria-expanded="false" aria-controls="panel-publication-2">Another Research Paper Title</button>
-            <p class="journal"><em>Another Journal Name, Volume(Issue), Year, Page Numbers</em></p>
-            <p class="links">
-                [<a href="download_link" target="_blank">Download PDF</a>] 
-                [<a href="slides_link" target="_blank">Slides</a>] 
-                [<a href="replication_link" target="_blank">Replication</a>] 
-                [<a href="pre_registration_link" target="_blank">Pre-registration</a>]
-            </p>
-            <div class="panel" id="panel-publication-2" aria-hidden="true">
-                <p>(with <a href="coauthor_link" class="coauthor">Coauthor Name</a>, ...)</p>
-                <p><strong>Abstract:</strong> [Abstract text here]</p>
-            </div>
-        </div>
-        -->
+        <!-- Add more publications similarly -->
     </section>
 
     <br>
@@ -70,6 +54,7 @@
     <section class="research-section">
         <h3>Working Papers</h3>
 
+        <!-- Information, Polarization, and Political Accountability -->
         <div class="paper-category category-information-polarization">
             <p>Information, Polarization, and Political Accountability</p>
             <button class="accordion" aria-expanded="false" aria-controls="panel-working-1">Accountability under Polarization</button>
@@ -77,13 +62,14 @@
                 <p>(with <a href="https://sites.google.com/site/hlarreguy/" class="coauthor">Horacio Larreguy</a>, <a href="https://john-l-marshall.github.io/" class="coauthor">John Marshall</a>, <a href="https://www.albertosimpser.com/" class="coauthor">Alberto Simpser</a>)</p>
                 <p><strong>Abstract:</strong> Political polarization can negatively impact electoral accountability by influencing how citizens perceive and process incumbent performance information. We study how such information affects voting behavior in a polarized environment, and how this varies when additionally treating citizens with a debiasing nudge to incorporate counter-attitudinal information.</p>
                 <p class="links">
-                    [<a href="https://bit.ly/3PxN4yp" target="_blank">Slides</a>] 
-                    [<a href="https://www.socialscienceregistry.org/trials/7789" target="_blank">Pre-registration</a>] 
+                    [<a href="https://bit.ly/3PxN4yp" target="_blank">Slides</a>]
+                    [<a href="https://www.socialscienceregistry.org/trials/7789" target="_blank">Pre-registration</a>]
                     [<a href="https://egap.org/resource/priority-theme-seminar-series-political-polarization-and-municipal-government-accountability-during-the-covid-19-pandemic-in-mexico/" target="_blank">Coverage at EGAP</a>]
                 </p>
             </div>
         </div>
 
+        <!-- Crime, Violence, and Political Representation -->
         <div class="paper-category category-crime-violence">
             <p>Crime, Violence, and Political Representation</p>
             <button class="accordion" aria-expanded="false" aria-controls="panel-working-2">A Theory of Criminal Bribes and Punishment in Elections</button>
@@ -96,22 +82,7 @@
             </div>
         </div>
 
-        <!-- Example of Adding Another Working Paper -->
-        <!--
-        <div class="paper-category category-some-category">
-            <p>Some Category</p>
-            <button class="accordion" aria-expanded="false" aria-controls="panel-working-3">Another Working Paper Title</button>
-            <div class="panel" id="panel-working-3" aria-hidden="true">
-                <p>(with <a href="coauthor_link" class="coauthor">Coauthor Name</a>, ...)</p>
-                <p><strong>Abstract:</strong> [Abstract text here]</p>
-                <p class="links">
-                    [<a href="slides_link" target="_blank">Slides</a>] 
-                    [<a href="pre_registration_link" target="_blank">Pre-registration</a>] 
-                    [<a href="coverage_link" target="_blank">Coverage at EGAP</a>]
-                </p>
-            </div>
-        </div>
-        -->
+        <!-- Add more working papers similarly -->
     </section>
 
     <br>
@@ -120,6 +91,7 @@
     <section class="research-section">
         <h3>Works in Progress</h3>
 
+        <!-- Misinformation -->
         <div class="paper-category category-misinformation">
             <p>Misinformation</p>
             <button class="accordion" aria-expanded="false" aria-controls="panel-wip-1">Emotional Drivers of Misinformation</button>
@@ -129,6 +101,7 @@
             </div>
         </div>
 
+        <!-- Generative AI for Economic and Policy Research -->
         <div class="paper-category category-generative-ai">
             <p>Generative AI for Economic and Policy Research</p>
             <button class="accordion" aria-expanded="false" aria-controls="panel-wip-2">Augmenting Human Survey Responses with Generative AI: An Application to Economic Research</button>
@@ -145,7 +118,7 @@
 </footer>
 
 <script>
-    // Accordion functionality with panels initially closed
+    // Accordion functionality with panels initially closed and ARIA attributes handled
     var acc = document.getElementsByClassName("accordion");
     for (var i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
@@ -153,15 +126,15 @@
             this.classList.toggle("active");
             // Get the associated panel
             var panel = this.nextElementSibling.nextElementSibling;
+            // Toggle ARIA attributes
+            var isExpanded = this.classList.contains("active");
+            this.setAttribute("aria-expanded", isExpanded);
+            panel.setAttribute("aria-hidden", !isExpanded);
             // Toggle panel display
             if (panel.style.display === "block") {
                 panel.style.display = "none";
-                this.setAttribute("aria-expanded", "false");
-                panel.setAttribute("aria-hidden", "true");
             } else {
                 panel.style.display = "block";
-                this.setAttribute("aria-expanded", "true");
-                panel.setAttribute("aria-hidden", "false");
             }
         });
         // Ensure panels are closed initially
