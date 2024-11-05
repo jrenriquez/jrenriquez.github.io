@@ -145,12 +145,15 @@ nav.menu a:hover {
     color: #333;
     padding-left: 10px;
     margin: 5px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .links a {
     color: #0066cc;
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-bottom: 5px;
     transition: text-decoration 0.3s ease;
 }
 
