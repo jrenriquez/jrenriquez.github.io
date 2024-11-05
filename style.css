@@ -63,7 +63,7 @@ header h2 {
 }
 
 .profile-image img {
-    width: 300px;
+    width: 250px;
     height: auto;
     border: 2px solid #ddd;
 }
@@ -74,24 +74,37 @@ header h2 {
     margin-top: 8px;
 }
 
-/* Bio Column */
-.bio {
+/* Bio Content Flex Layout */
+.bio-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Left Column: Bio Text */
+.bio-text {
     flex: 2;
 }
 
-.bio p {
-    margin-bottom: 15px;
-    font-size: 1.1em;
+/* Right Column: Bio Image */
+.bio-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bio-image img {
+    width: 100%; /* Ensures the image scales to fill the column width */
+    max-width: 250px;
+    height: auto;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.bio-image figcaption {
+    font-size: 0.9em;
     color: #555;
-}
-
-.bio a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-.bio a:hover {
-    text-decoration: underline;
+    text-align: center;
 }
 
 footer {
