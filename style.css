@@ -8,7 +8,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -26,92 +26,83 @@ header h2 {
     color: #222;
 }
 
-.content {
+header p {
+    font-size: 1em;
+    color: #555;
+}
+
+nav.menu {
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
+    justify-content: center;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
 }
 
-/* Left Menu Column */
-.menu {
-    flex: 1;
-    border-right: 1px solid #ddd;
-    padding-right: 10px;
-}
-
-.menu a {
-    display: block;
+nav.menu a {
     color: #333;
     text-decoration: none;
-    margin: 10px 0;
-    font-weight: bold;
+    margin: 0 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1em;
 }
 
-.menu a:hover {
+nav.menu a:hover {
     color: #0066cc;
 }
 
-/* Image and Bio Alignment */
-.profile {
-    display: flex;
-    gap: 20px;
-    flex: 3;
+/* Research Sections */
+.research-section {
+    margin-top: 30px;
 }
 
-.profile-image {
-    flex: 1;
+.research-section h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.profile-image img {
-    width: 250px;
-    height: auto;
-    border: 2px solid #ddd;
+/* Category Colors */
+.category-information-polarization p {
+    color: #0066cc; /* Blue */
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-.profile-image figcaption {
-    font-size: 0.9em;
-    color: #555;
-    margin-top: 8px;
+.category-crime-violence p {
+    color: #d9534f; /* Red */
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-/* Bio Content Flex Layout */
-.bio-content {
-    display: flex;
-    gap: 20px;
+.category-coordination p {
+    color: #8e44ad; /* Purple */
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-/* Left Column: Bio Text */
-.bio-text {
-    flex: 2;
+.category-misinformation p {
+    color: #f39c12; /* Orange */
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-/* Right Column: Bio Image */
-.bio-image {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.category-digital-economy p {
+    color: #16a085; /* Teal */
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-.bio-image img {
-    width: 275px;
-    height: auto;
-    border: 2px solid #ddd;
-}
-
-.bio-image figcaption {
-    font-size: 0.9em;
-    color: #555;
-    text-align: center;
-}
-
-footer {
-    background-color: #fafafa;
-    text-align: center;
-    padding: 15px;
-    font-size: 0.9em;
-    color: #777;
-    border-top: 1px solid #ddd;
+.category-deliberating-for-social-good p {
+    color: #e74c3c; /* Additional color for other category */
+    font-size: 1.1em;
+    font-weight: bold;
     margin-top: 20px;
 }
 
@@ -120,14 +111,15 @@ footer {
     background-color: #f1f1f1;
     color: #444;
     cursor: pointer;
-    padding: 10px;
+    padding: 15px;
     width: 100%;
-    border: none;
+    border: 1px solid #ddd;
     text-align: left;
     outline: none;
     font-size: 1.1em;
     transition: background-color 0.3s ease;
-    font-weight: bold;
+    font-weight: normal; /* Not bold */
+    margin-bottom: 5px;
 }
 
 .accordion:hover {
@@ -143,30 +135,57 @@ footer {
     padding: 15px;
     display: none; /* Panels are initially closed */
     background-color: white;
-    border-left: 2px solid #ddd;
-    overflow: hidden;
+    border: 1px solid #ddd;
+    border-top: none;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Journal Styling */
 .journal {
-    color: #4CAF50; /* Nicer green color */
+    color: #2E8B57; /* Nice green color, SeaGreen */
     font-size: 1em;
     margin: 5px 0 10px 0;
     padding-left: 10px;
     font-style: italic;
 }
 
-/* Links Styling Outside Accordion */
+/* Links Styling */
 .links {
-    font-size: 0.9em;
+    font-size: 0.95em;
     color: #333;
     padding-left: 10px;
-    margin: 0;
+    margin: 5px 0 10px 0;
 }
+
 .links a {
     color: #0066cc;
     text-decoration: none;
+    margin-right: 10px;
 }
+
 .links a:hover {
     text-decoration: underline;
+}
+
+/* Coauthor Links Styling */
+.coauthor {
+    color: inherit; /* Keep link color the same as surrounding text */
+    text-decoration: none;
+    border-bottom: 1px dashed transparent; /* Transparent underline by default */
+}
+
+.coauthor:hover {
+    border-bottom-color: #0066cc; /* Underline color on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fafafa;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
 }
