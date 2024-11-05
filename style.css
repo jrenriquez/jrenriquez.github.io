@@ -21,13 +21,14 @@ header {
 }
 
 header h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: normal;
     color: #222;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 header p {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #555;
 }
 
@@ -42,14 +43,15 @@ nav.menu {
 nav.menu a {
     color: #333;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: normal;
     text-transform: uppercase;
     font-size: 1em;
+    transition: color 0.3s ease;
 }
 
 nav.menu a:hover {
-    color: #0066cc;
+    color: #2E8B57; /* Slightly darker green on hover */
 }
 
 /* Research Sections */
@@ -58,57 +60,39 @@ nav.menu a:hover {
 }
 
 .research-section h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Category Colors */
-.category-information-polarization p {
-    color: #0066cc; /* Blue */
-    font-size: 1.1em;
+.paper-category p {
+    font-size: 1.2em;
     font-weight: bold;
-    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Specific colors for each category */
+.category-information-polarization p {
+    color: #2E8B57; /* SeaGreen */
 }
 
 .category-crime-violence p {
-    color: #d9534f; /* Red */
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.category-coordination p {
-    color: #8e44ad; /* Purple */
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-top: 20px;
+    color: #D9534F; /* Bootstrap's danger red */
 }
 
 .category-misinformation p {
-    color: #f39c12; /* Orange */
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-top: 20px;
+    color: #F39C12; /* Orange */
 }
 
-.category-digital-economy p {
-    color: #16a085; /* Teal */
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.category-deliberating-for-social-good p {
-    color: #e74c3c; /* Additional color for other category */
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-top: 20px;
+.category-generative-ai p {
+    color: #16A085; /* Teal */
 }
 
 /* Accordion Button Styles */
 .accordion {
-    background-color: #f1f1f1;
+    background-color: #fff;
     color: #444;
     cursor: pointer;
     padding: 15px;
@@ -119,35 +103,38 @@ nav.menu a:hover {
     font-size: 1.1em;
     transition: background-color 0.3s ease;
     font-weight: normal; /* Not bold */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin-bottom: 5px;
 }
 
 .accordion:hover {
-    background-color: #ddd;
+    background-color: #f1f1f1;
 }
 
 .accordion.active {
-    background-color: #ccc;
+    background-color: #e2e2e2;
 }
 
 /* Accordion Panel Styles */
 .panel {
     padding: 15px;
     display: none; /* Panels are initially closed */
-    background-color: white;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-top: none;
     margin-bottom: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Georgia', serif;
 }
 
 /* Journal Styling */
 .journal {
-    color: #2E8B57; /* Nice green color, SeaGreen */
+    color: #2E8B57; /* SeaGreen */
     font-size: 1em;
     margin: 5px 0 10px 0;
     padding-left: 10px;
     font-style: italic;
+    font-family: 'Georgia', serif;
 }
 
 /* Links Styling */
@@ -161,7 +148,8 @@ nav.menu a:hover {
 .links a {
     color: #0066cc;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 15px;
+    transition: text-decoration 0.3s ease;
 }
 
 .links a:hover {
@@ -173,6 +161,7 @@ nav.menu a:hover {
     color: inherit; /* Keep link color the same as surrounding text */
     text-decoration: none;
     border-bottom: 1px dashed transparent; /* Transparent underline by default */
+    transition: border-bottom-color 0.3s ease;
 }
 
 .coauthor:hover {
