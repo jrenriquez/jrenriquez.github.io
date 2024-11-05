@@ -63,7 +63,7 @@ header h2 {
 }
 
 .profile-image img {
-    width: 200px;  /* Adjusted width for a rectangular image */
+    width: 400px;
     height: auto;
     border: 2px solid #ddd;
 }
