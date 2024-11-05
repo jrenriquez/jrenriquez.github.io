@@ -82,6 +82,7 @@ nav.menu a:hover {
     color: #D9534F; /* Bootstrap's danger red */
 }
 
+/* Works in Progress Categories */
 .category-misinformation p {
     color: #F39C12; /* Orange */
 }
@@ -125,6 +126,7 @@ nav.menu a:hover {
     margin-bottom: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     font-family: 'Georgia', serif;
+    color: #000; /* Black font inside accordion */
 }
 
 /* Journal Styling */
