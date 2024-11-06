@@ -22,10 +22,10 @@ body {
 }
 
 .top-nav {
-    background-color: #fff;
     border-bottom: 1px solid #ddd;
     background-color: transparent;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -59,6 +59,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: #333;
+    font-size: 1.2rem;
 }
 
 .nav-links a.active {
@@ -79,7 +80,7 @@ body {
 
 .main-container {
     max-width: 1200px;
-    margin: 4rem auto 2rem;
+    margin: 8rem auto 2rem;
     padding: 0 2rem;
 }
 
@@ -87,6 +88,7 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
+    align-items: start;
 }
 
 h1 {
@@ -167,9 +169,12 @@ h1 {
 /* Image column */
 .profile-image img {
     width: 100%;
+    max-width: 250px;
     height: auto;
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
 }
 
 .profile-image figcaption {
