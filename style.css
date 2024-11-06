@@ -73,14 +73,45 @@ nav.menu a:hover {
 /* Updated accordion styles */
 .accordion {
     background-color: #ffffff;
-    color: #333;
-    padding: 18px 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    font-size: 1.05em;
+    color: #2c3e50;
+    padding: 22px 25px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    font-size: 1.1em;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    margin-bottom: 8px;
-    transition: all 0.2s ease;
+    margin-bottom: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    position: relative;
+    overflow: hidden;
+}
+
+.accordion:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.accordion.active {
+    background-color: #f8f9fa;
+    border-color: #e2e8f0;
+    margin-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Accordion Panel Styles */
+.panel {
+    padding: 15px;
+    display: none; /* Panels are initially closed */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Georgia', serif;
+    color: #000; /* Black font inside accordion */
 }
 
 /* Research Sections */
@@ -118,27 +149,6 @@ nav.menu a:hover {
 
 .category-generative-ai p {
     color: #131c69; /* Teal */
-}
-
-.accordion:hover {
-    background-color: #f1f1f1;
-}
-
-.accordion.active {
-    background-color: #e2e2e2;
-}
-
-/* Accordion Panel Styles */
-.panel {
-    padding: 15px;
-    display: none; /* Panels are initially closed */
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-top: none;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    font-family: 'Georgia', serif;
-    color: #000; /* Black font inside accordion */
 }
 
 /* Journal Styling */
