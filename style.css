@@ -14,44 +14,73 @@ body {
 }
 
 header {
-    background-color: #fafafa;
-    padding: 30px 0;
+    background-color: #ffffff;
+    padding: 40px 0;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
 }
 
 header h2 {
-    font-size: 2.5em;
-    font-weight: normal;
-    color: #222;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
 }
 
 header p {
-    font-size: 1.2em;
-    color: #555;
+    font-size: 1.1em;
+    color: #666;
+    margin: 5px 0;
+    line-height: 1.4;
 }
 
+/* Updated navigation styles */
 nav.menu {
-    display: flex;
-    justify-content: center;
-    background-color: #fafafa;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
 }
 
 nav.menu a {
-    color: #333;
+    color: #444;
     text-decoration: none;
-    margin: 0 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 1em;
-    transition: color 0.3s ease;
+    margin: 0 25px;
+    font-size: 0.95em;
+    letter-spacing: 0.5px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    transition: color 0.2s ease;
 }
 
 nav.menu a:hover {
-    color: #2E8B57; /* Slightly darker green on hover */
+    color: #2c5282;
+}
+
+/* Updated research section styles */
+.research-section h2 {
+    font-size: 1.8em;
+    color: #2c5282;
+    margin: 40px 0 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+}
+
+/* Updated accordion styles */
+.accordion {
+    background-color: #ffffff;
+    color: #333;
+    padding: 18px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1.05em;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
 }
 
 /* Research Sections */
@@ -79,33 +108,16 @@ nav.menu a:hover {
 }
 
 .category-crime-violence p {
-    color: #D9534F; /* Bootstrap's danger red */
+    color: #131c69; /* Bootstrap's danger red */
 }
 
 /* Works in Progress Categories */
 .category-misinformation p {
-    color: #F39C12; /* Orange */
+    color: #131c69; /* Orange */
 }
 
 .category-generative-ai p {
-    color: #16A085; /* Teal */
-}
-
-/* Accordion Button Styles */
-.accordion {
-    background-color: #fff;
-    color: #444;
-    cursor: pointer;
-    padding: 15px;
-    width: 100%;
-    border: 1px solid #ddd;
-    text-align: left;
-    outline: none;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
-    font-weight: normal; /* Not bold */
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin-bottom: 5px;
+    color: #131c69; /* Teal */
 }
 
 .accordion:hover {
