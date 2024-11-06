@@ -15,7 +15,7 @@ body {
 
 header {
     background-color: #ffffff;
-    padding: 40px 0;
+    padding: 25px 0;
     text-align: center;
     border-bottom: 1px solid #e0e0e0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.03);
@@ -23,7 +23,7 @@ header {
 
 header h2 {
     font-size: 2.2em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #1a1a1a;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 500;
@@ -39,7 +39,7 @@ header p {
 /* Updated navigation styles */
 nav.menu {
     background-color: #ffffff;
-    padding: 15px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #e0e0e0;
     position: sticky;
     top: 0;
@@ -65,7 +65,7 @@ nav.menu a:hover {
 .research-section h2 {
     font-size: 1.8em;
     color: #2c5282;
-    margin: 40px 0 20px;
+    margin: 25px 0 15px;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 500;
 }
@@ -74,12 +74,12 @@ nav.menu a:hover {
 .accordion {
     background-color: #ffffff;
     color: #2c3e50;
-    padding: 22px 25px;
+    padding: 12px 15px;
     border: 1px solid #eaeaea;
     border-radius: 8px;
     font-size: 1.1em;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0,0,0,0.02);
@@ -103,12 +103,12 @@ nav.menu a:hover {
 
 /* Accordion Panel Styles */
 .panel {
-    padding: 15px;
+    padding: 10px;
     display: none; /* Panels are initially closed */
     background-color: #fff;
     border: 1px solid #ddd;
     border-top: none;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     font-family: 'Georgia', serif;
     color: #000; /* Black font inside accordion */
@@ -116,13 +116,13 @@ nav.menu a:hover {
 
 /* Research Sections */
 .research-section {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .research-section h3 {
     font-size: 1.8em;
     color: #333;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -165,7 +165,7 @@ nav.menu a:hover {
 .research-subtitle {
     color: #0066cc;
     font-size: 1.2em;
-    margin: 5px 0 10px 0;
+    margin: 3px 0 5px 0;
     padding-left: 10px;
 }
 
@@ -174,7 +174,7 @@ nav.menu a:hover {
     font-size: 0.95em;
     color: #333;
     padding-left: 10px;
-    margin: 5px 0 10px 0;
+    margin: 3px 0 5px 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -183,7 +183,7 @@ nav.menu a:hover {
     color: #0066cc;
     text-decoration: none;
     margin-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     transition: text-decoration 0.3s ease;
 }
 
@@ -207,9 +207,9 @@ nav.menu a:hover {
 footer {
     background-color: #fafafa;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     font-size: 0.9em;
     color: #777;
     border-top: 1px solid #ddd;
-    margin-top: 30px;
+    margin-top: 20px;
 }
