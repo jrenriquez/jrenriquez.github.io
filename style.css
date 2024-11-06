@@ -23,7 +23,8 @@ body {
 
 .top-nav {
     background-color: #fff;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -36,22 +37,44 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1200px;              /* Or whatever width matches your content-grid */
+    margin: 0 auto;                 /* Center the container */
+    display: flex;
+    padding: 0 2rem;               /* Add horizontal padding */
 }
 
 .social-links {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: flex-start;
 }
 
 .nav-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     justify-content: flex-end;
+}
+
+/* Optional: Style the links */
+.nav-links a {
+    text-decoration: none;
+    color: #333;
 }
 
 .nav-links a.active {
     color: #0066cc;
+}
+
+.nav-links a:hover {
+    color: #666;
+}
+
+.social-links a {
+    color: #333;
+}
+
+.social-links a:hover {
+    color: #666;
 }
 
 .main-container {
