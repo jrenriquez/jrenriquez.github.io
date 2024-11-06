@@ -8,7 +8,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -21,90 +21,159 @@ header {
 }
 
 header h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: normal;
     color: #222;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.content {
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+nav.menu {
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
+    justify-content: center;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
 }
 
-/* Left Menu Column */
-.menu {
-    flex: 1;
-    border-right: 1px solid #ddd;
-    padding-right: 10px;
-}
-
-.menu a {
-    display: block;
+nav.menu a {
     color: #333;
     text-decoration: none;
-    margin: 10px 0;
+    margin: 0 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav.menu a:hover {
+    color: #2E8B57; /* Slightly darker green on hover */
+}
+
+/* Research Sections */
+.research-section {
+    margin-top: 30px;
+}
+
+.research-section h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 25px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Category Colors */
+.paper-category p {
+    font-size: 1.2em;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.menu a:hover {
+/* Specific colors for each category */
+.category-information-polarization p {
+    color: #2E8B57; /* SeaGreen */
+}
+
+.category-crime-violence p {
+    color: #D9534F; /* Bootstrap's danger red */
+}
+
+/* Works in Progress Categories */
+.category-misinformation p {
+    color: #F39C12; /* Orange */
+}
+
+.category-generative-ai p {
+    color: #16A085; /* Teal */
+}
+
+/* Accordion Button Styles */
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: left;
+    outline: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    font-weight: normal; /* Not bold */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 5px;
+}
+
+.accordion:hover {
+    background-color: #f1f1f1;
+}
+
+.accordion.active {
+    background-color: #e2e2e2;
+}
+
+/* Accordion Panel Styles */
+.panel {
+    padding: 15px;
+    display: none; /* Panels are initially closed */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Georgia', serif;
+    color: #000; /* Black font inside accordion */
+}
+
+/* Journal Styling */
+.journal {
+    color: #2E8B57; /* SeaGreen */
+    font-size: 1em;
+    margin: 5px 0 10px 0;
+    padding-left: 10px;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+}
+
+/* Links Styling */
+.links {
+    font-size: 0.95em;
+    color: #333;
+    padding-left: 10px;
+    margin: 5px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links a {
     color: #0066cc;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    transition: text-decoration 0.3s ease;
 }
 
-/* Image and Bio Alignment */
-.profile {
-    display: flex;
-    gap: 20px;
-    flex: 3;
+.links a:hover {
+    text-decoration: underline;
 }
 
-.profile-image {
-    flex: 1;
+/* Coauthor Links Styling */
+.coauthor {
+    color: inherit; /* Keep link color the same as surrounding text */
+    text-decoration: none;
+    border-bottom: 1px dashed transparent; /* Transparent underline by default */
+    transition: border-bottom-color 0.3s ease;
 }
 
-.profile-image img {
-    width: 250px;
-    height: auto;
-    border: 2px solid #ddd;
+.coauthor:hover {
+    border-bottom-color: #0066cc; /* Underline color on hover */
 }
 
-.profile-image figcaption {
-    font-size: 0.9em;
-    color: #555;
-    margin-top: 8px;
-}
-
-/* Bio Content Flex Layout */
-.bio-content {
-    display: flex;
-    gap: 20px;
-}
-
-/* Left Column: Bio Text */
-.bio-text {
-    flex: 2;
-}
-
-/* Right Column: Bio Image */
-.bio-image {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bio-image img {
-    width: 275px;
-    height: auto;
-    border: 2px solid #ddd;
-}
-
-.bio-image figcaption {
-    font-size: 0.9em;
-    color: #555;
-    text-align: center;
-}
-
+/* Footer Styles */
 footer {
     background-color: #fafafa;
     text-align: center;
@@ -112,47 +181,5 @@ footer {
     font-size: 0.9em;
     color: #777;
     border-top: 1px solid #ddd;
-    margin-top: 20px;
+    margin-top: 30px;
 }
-
-/* Accordion Button Styles */
-.accordion {
-    background-color: #f1f1f1;
-    color: #444;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
-}
-
-.accordion:hover {
-    background-color: #ddd;
-}
-
-.accordion.active {
-    background-color: #ccc;
-}
-
-/* Accordion Panel Styles */
-.panel {
-    padding: 15px;
-    display: none; /* Panels are initially closed */
-    background-color: white;
-    border-left: 2px solid #ddd;
-    overflow: hidden;
-}
-
-/* Journal Styling */
-.journal {
-    color: #4CAF50; /* Nicer green color */
-    font-size: 1em;
-    margin: 5px 0 10px 0;
-    padding-left: 10px;
-    font-style: italic;
-}
-
