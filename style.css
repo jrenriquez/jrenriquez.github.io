@@ -1,4 +1,13 @@
-/* Reset and base styles */
+/* Base styles */
+:root {
+    --primary-color: #2c3e50;
+    --text-color: #333333;
+    --link-color: #2980b9;
+    --border-color: #e0e0e0;
+    --background-color: #ffffff;
+    --header-font: 'Source Sans Pro', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,94 +15,174 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: var(--header-font);
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
-/* Top navigation */
-.top-menu {
-    padding: 1rem;
-    text-align: right;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
+/* Navigation */
+.top-nav {
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.top-menu a {
-    margin-left: 2rem;
-    text-decoration: none;
-    color: #333;
-}
-
-/* Main content layout */
-.main-content {
-    display: flex;
+.nav-container {
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: right;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+    color: var(--link-color);
+}
+
+.top-nav a.active {
+    color: var(--link-color);
+    font-weight: 600;
+}
+
+/* Main container */
+.main-container {
+    max-width: 1200px;
+    margin: 3rem auto;
     padding: 0 2rem;
 }
 
-.left-column {
-    flex: 2;
-    padding-right: 3rem;
+.content-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+    align-items: start;
 }
 
-.right-column {
-    flex: 1;
-}
-
-/* Typography */
-h1 {
-    font-size: 2.5rem;
+/* Text column */
+.profile-header h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
+    line-height: 1.2;
 }
 
-h2 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    color: #666;
-    margin-bottom: 1rem;
+.profile-header h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 0.3rem;
 }
 
-/* Social icons */
-.social-icons {
-    margin: 1rem 0;
+.profile-header h3 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
 }
 
-.social-icons a {
-    margin-right: 1rem;
-    color: #333;
-    font-size: 1.2rem;
-}
-
-/* Divider */
-.divider {
-    border: none;
-    border-top: 1px solid #ddd;
+.social-links {
     margin: 1.5rem 0;
 }
 
-/* Profile image */
+.social-links a {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-right: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--link-color);
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 2rem 0;
+}
+
+.bio-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.bio-content p {
+    margin-bottom: 1.5rem;
+}
+
+.bio-content a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.bio-content a:hover {
+    text-decoration: underline;
+}
+
+/* Image column */
 .profile-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image figcaption {
+    margin-top: 1rem;
     font-size: 0.9rem;
     color: #666;
-    margin-top: 0.5rem;
+    text-align: center;
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
+@media (max-width: 968px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
-    
-    .left-column {
-        padding-right: 0;
-        margin-bottom: 2rem;
+
+    .nav-container {
+        text-align: center;
+    }
+
+    .top-nav a {
+        margin: 0 1rem;
+    }
+
+    .profile-header h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-nav a {
+        margin: 0 0.5rem;
+        font-size: 1rem;
+    }
+
+    .profile-header h1 {
+        font-size: 2rem;
+    }
+
+    .profile-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .profile-header h3 {
+        font-size: 1.1rem;
     }
 }
