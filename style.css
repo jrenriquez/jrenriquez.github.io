@@ -151,6 +151,14 @@ nav.menu a:hover {
     font-family: 'Georgia', serif;
 }
 
+/* Research Subtitle Styling */
+.research-subtitle {
+    color: #0066cc;
+    font-size: 1.2em;
+    margin: 5px 0 10px 0;
+    padding-left: 10px;
+}
+
 /* Links Styling */
 .links {
     font-size: 0.95em;
