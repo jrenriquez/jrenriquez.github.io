@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ... existing head content ... -->
-    <!-- Add FontAwesome for social icons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Ramón Enríquez | Stanford University</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- New navigation at the top -->
-    <nav class="top-menu">
-        <a href="index.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="about.html">CV</a>
-        <a href="policy.html">Policy Papers</a>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="active">About</a>
+            <a href="research.html">Research</a>
+            <a href="about.html">CV</a>
+            <a href="index.html#policy">Policy Papers</a>
+        </div>
     </nav>
 
-    <div class="container main-content">
-        <div class="left-column">
-            <h1>José Ramón Enríquez</h1>
-            <h2><a href="https://profiles.stanford.edu/enriquez"><Postdoctoral Fellow, Stanford University></a></h2>
-            
-            <!-- Social icons -->
-            <div class="social-icons">
-                <a href="mailto:jrenriquez@stanford.edu"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/jrenriquez"><i class="fab fa-github"></i></a>
-                <a href="https://orcid.org/0000-0003-2702-630X"><i class="fab fa-orcid"></i></a>
-                <a href="https://twitter.com/joseramoneg"><i class="fab fa-x-twitter"></i></a>
+    <div class="main-container">
+        <div class="content-grid">
+            <!-- Left column with text -->
+            <div class="text-column">
+                <header class="profile-header">
+                    <h1>José Ramón Enríquez</h1>
+                    <h2>Postdoctoral Fellow</h2>
+                    <h3>Stanford University</h3>
+                    
+                    <div class="social-links">
+                        <a href="mailto:your.email@stanford.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="your-github-url" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="your-orcid-url" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+                        <a href="your-twitter-url" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </header>
+
+                <div class="divider"></div>
+
+                <div class="bio-content">
+                    <p>I am a Postdoctoral Fellow at the <a href="https://www.gsb.stanford.edu/faculty-research/labs-initiatives/sil">Golub Capital Social Impact Lab</a> (Stanford Graduate School of Business), the <a href="https://digitaleconomy.stanford.edu/">Digital Economy Lab</a> (Stanford Institute for Human-Centered Artificial Intelligence), and an Affiliated Researcher at the <a href="https://kingcenter.stanford.edu/">King Center on Global Development</a>.</p>
+                    
+                    <p>I study how to improve political accountability in developing contexts. I work on a variety of topics, such as the role of (mis)information, criminal-political violence, and policy coordination across levels of government. My recent work is centered on reducing misinformation sharing and enhancing online deliberation through the use of Generative AI.</p>
+                    
+                    <p>I received my Ph.D. in Political Economy and Government (PEG) from Harvard University in May, 2023.</p>
+                </div>
             </div>
 
-            <hr class="divider">
-
-            <!-- Bio text -->
-            <div class="bio">
-                <p>I am a Postdoctoral Fellow at the <a href="https://www.gsb.stanford.edu/faculty-research/labs-initiatives/sil">Golub Capital Social Impact Lab</a> (Stanford Graduate School of Business), the <a href="https://digitaleconomy.stanford.edu/">Digital Economy Lab</a> (Stanford Institute for Human-Centered Artificial Intelligence), and an Affiliated Researcher at the <a href="https://kingcenter.stanford.edu/">King Center on Global Development</a>.</p>
-                
-                <p>I study how to improve political accountability in developing contexts. I work on a variety of topics, such as the role of (mis)information, criminal-political violence, and policy coordination across levels of government. My recent work is centered on reducing misinformation sharing and enhancing online deliberation through the use of Generative AI.</p>
-                
-                <!-- ... rest of the bio ... -->
+            <!-- Right column with image -->
+            <div class="image-column">
+                <figure class="profile-image">
+                    <img src="https://raw.githubusercontent.com/jrenriquez/jrenriquez.github.io/main/files/panamericana.jpg" 
+                         alt="Unión Panamericana, 1940. Diego Rivera">
+                    <figcaption>Unión Panamericana, 1940. Diego Rivera</figcaption>
+                </figure>
             </div>
-        </div>
-
-        <div class="right-column">
-            <figure class="profile-image">
-                <img src="https://raw.githubusercontent.com/jrenriquez/jrenriquez.github.io/main/files/panamericana.jpg" 
-                     alt="Unión Panamericana, 1940. Diego Rivera">
-                <figcaption>Unión Panamericana, 1940. Diego Rivera</figcaption>
-            </figure>
         </div>
     </div>
-
-    <footer>
-        <p>&copy; 2024 José Ramón Enríquez</p>
-    </footer>
 </body>
 </html>
