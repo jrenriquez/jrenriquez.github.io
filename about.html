@@ -3,58 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | José Ramón Enríquez</title>
+    <title>Bio | José Ramón Enríquez</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-    <div class="content">
-        <!-- Contact Icons -->
-        <div class="contact-icons">
-            <a href="mailto:jrenriquez@stanford.edu" title="Email">
-                <img src="path/to/email-icon.svg" alt="Email" class="icon">
-            </a>
-            <a href="tel:+6178429680" title="Call">
-                <img src="path/to/phone-icon.svg" alt="Phone" class="icon">
-            </a>
+    <nav class="top-nav">
+        <div class="nav-container" style="padding: 0.5rem 2rem;">
+            <div class="nav-header">
+                <div style="margin-bottom: 0.25rem;">
+                    <h3 style="margin: 0;">José Ramón Enríquez</h3>
+                    <p style="margin: 0;">Postdoctoral Fellow, Stanford University</p>
+                </div>
+                <div class="social-links" style="gap: 0.25rem;margin-top: -0px">
+                    <a href="mailto:jrenriquez@stanford.edu" aria-label="Email" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="http://github.com/jrenriquez/" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/joseramoneg" aria-label="X-Twitter" style="font-family: Arial; font-weight: bold; text-decoration: none;" target="_blank">𝕏</a>
+                <a href="https://orcid.org/0000-0003-2702-630X" aria-label="ORCID" target="_blank"><i class="fab fa-orcid"></i></a>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">Bio & CV</a>
+                <a href="research.html">Research</a>
+                <a href="policy.html">Policy Papers</a>
+            </div>
         </div>
-</header>
+    </nav>
+<main class="main-container" style="margin-top: 180px;">
+    <div class="content-grid" style="gap: 4rem; grid-template-columns: 1fr 2fr;">
 
-<nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="about.html">Bio & CV</a>
-    <a href="research.html">Research</a>
-    <a href="index.html#policy">Policy & Translational Papers</a>
-</nav>
-
-<main class="container">
-    <div class="bio-content">
-        <!-- Left Column: Bio Text -->
-        <section class="bio-text">
-            <p>I am a Postdoctoral Fellow at <a href="https://www.gsb.stanford.edu/faculty-research/labs-initiatives/sil" target="_blank">the Golub Capital Social Impact Lab</a> (Stanford Graduate School of Business) and the <a href="https://digitaleconomy.stanford.edu/" target="_blank">Digital Economy Lab</a> (Stanford Institute for Human-Centered Artificial Intelligence), where I collaborate with Professors <a href="https://gsb-faculty.stanford.edu/susan-athey/" target="_blank">Susan Athey</a> and <a href="https://digitaleconomy.stanford.edu/people/erik-brynjolfsson/" target="_blank">Erik Brynjolfsson</a>. My current projects explore ways to decrease misinformation sharing and harness generative AI to enhance deliberation on social issues, as well as to augment human survey responses.</p>
-
-            <p>My research is situated in the political economy of economic and political development, with a focus on political accountability and elite behavior. Key areas of my work include the role of (mis)information in improving political accountability and reducing polarization, the causes and effects of criminal-political violence on democratic representation, and the effects of the lack of coordination across levels of government.</p>
-
-            <p>I earned my Ph.D. in Political Economy and Government (PEG) from the Harvard Kennedy School and the Economics and Government Departments at Harvard University in May 2023.</p>
-
-            <p>Originally from Durango, Mexico, I received a B.A. in Economics and a B.A. in Political Science from Instituto Tecnológico Autónomo de México (ITAM) in Mexico City.</p>
-
-            <p>You can download my CV <a href="https://raw.githubusercontent.com/jrenriquez/jrenriquez.github.io/main/files/ENRIQUEZ_CV.pdf" target="_blank">here</a>.</p>
-        </section>
-
-        <!-- Right Column: Image -->
-        <aside class="profile-container">
-            <figure>
+        <!-- Left Column: Image -->
+        <div class="image-column" style="align-self: start; margin-top: 2rem;">
+            <figure class="profile-image" style="margin: 0;">
                 <img src="https://raw.githubusercontent.com/jrenriquez/jrenriquez.github.io/main/files/JREG.jpeg" 
-                     alt="José Ramón Enríquez">
+                        alt="José Ramón Enríquez"
+                        style="width: 100%; max-width: 300px; height: auto; border-radius: 4px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
             </figure>
-        </aside>
+        </div>
+                
+        <!-- Right Column: Bio Text -->
+        <div class="text-column">
+            <div class="bio-content" style="font-size: 1.1rem; line-height: 1.8;">
+                <p style="margin-bottom: 1.5rem;">
+                    I am a Postdoctoral Fellow at <a href="https://www.gsb.stanford.edu/faculty-research/labs-initiatives/sil" target="_blank">the Golub Capital Social Impact Lab</a> 
+                    (Stanford Graduate School of Business) and the <a href="https://digitaleconomy.stanford.edu/" target="_blank">Digital Economy Lab</a> 
+                    (Stanford Institute for Human-Centered Artificial Intelligence), where I collaborate with Professors 
+                    <a href="https://gsb-faculty.stanford.edu/susan-athey/" target="_blank">Susan Athey</a> and 
+                    <a href="https://digitaleconomy.stanford.edu/people/erik-brynjolfsson/" target="_blank">Erik Brynjolfsson</a>. 
+                    My current projects explore ways to decrease misinformation sharing and harness generative AI to enhance 
+                    deliberation on social issues, as well as to augment human survey responses.
+                </p>
+                
+                <p style="margin-bottom: 1.5rem;">
+                    My research is situated in the political economy of economic and political development, with a focus on 
+                    political accountability and elite behavior. Key areas of my work include the role of (mis)information 
+                    in improving political accountability and reducing polarization, the causes and effects of criminal-political 
+                    violence on democratic representation, and the effects of the lack of coordination across levels of government.
+                </p>
+
+                <p style="margin-bottom: 1.5rem;">
+                    I earned my Ph.D. in Political Economy and Government (PEG) from the Harvard Kennedy School and the 
+                    Economics and Government Departments at Harvard University in May 2023.
+                </p>
+
+                <p style="margin-bottom: 1.5rem;">
+                    Originally from Durango, Mexico, I received a B.A. in Economics and a B.A. in Political Science from 
+                    Instituto Tecnológico Autónomo de México (ITAM) in Mexico City.
+                </p>
+
+                <p style="margin-bottom: 1.5rem;">
+                    You can see my CV <a href="cv.html">here</a>.
+                </p>
+            </div>
+        </div>
+
     </div>
 </main>
 
-<footer>
-    <p>&copy; 2024 José Ramón Enríquez. All rights reserved.</p>
+
+<footer style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f8f9fa; padding: 15px 0; text-align: center; border-top: 1px solid #dee2e6; box-shadow: 0 -2px 10px rgba(0,0,0,0.05);">
+    <p style="margin: 0; color: #6c757d; font-size: 0.9rem;">&copy; 2024 José Ramón Enríquez. All rights reserved.</p>
 </footer>
 
 </body>
