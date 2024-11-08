@@ -189,40 +189,106 @@ h1 {
 /* Responsive design */
 @media (max-width: 968px) {
     .content-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 2rem;
+        padding: 0 1rem;
     }
 
     .nav-container {
+        flex-direction: column;
+        padding: 0.5rem !important;
+    }
+
+    .nav-header {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        width: 100%;
     }
 
-    .top-nav a {
-        margin: 0 1rem;
+    .mobile-header {
+        text-align: center;
+        margin-bottom: 0.5rem;
     }
 
-    .profile-header h1 {
-        font-size: 2.4rem;
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin: 0.5rem 0;
+    }
+
+    .main-container {
+        margin-top: 220px !important;
+        padding: 0 1rem;
+    }
+
+    .image-column {
+        order: -1;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .text-column {
+        padding: 0 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .top-nav a {
-        margin: 0 0.5rem;
-        font-size: 1rem;
+    .nav-links {
+        gap: 0.75rem;
     }
 
-    .profile-header h1 {
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .main-container {
+        margin-top: 240px !important;
+    }
+
+    .bio-content {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    h1 {
         font-size: 2rem;
     }
 
-    .profile-header h2 {
-        font-size: 1.3rem;
+    .nav-header h3 {
+        font-size: 1.2rem;
     }
 
-    .profile-header h3 {
-        font-size: 1.1rem;
+    .nav-header p {
+        font-size: 0.9rem;
     }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
+
+    .content-grid {
+        gap: 2rem !important;
+    }
+}
+
+/* Add styles for mobile navigation */
+.mobile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Common button styles for both <button> and <a> elements */
