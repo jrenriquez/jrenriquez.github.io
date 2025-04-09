@@ -68,58 +68,79 @@
 
 
 <style>
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-4px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+    .news-banner {
+        margin-top: 2em;
+        padding: 1.5em;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        font-size: 0.95em;
+        line-height: 1.6;
+        overflow: hidden;
+    }
 
-.news-banner {
-    margin-top: 2em;
-    padding: 0.8em 1em;
-    background-color: #f5f5f5;
-    border-left: 4px solid #aaa;
-    font-size: 0.95em;
-    color: #333;
-    font-family: 'Source Sans Pro', sans-serif;
-    animation: fadeIn 1s ease-in;
-}
+    .news-banner h2 {
+        margin-top: 0;
+        font-size: 1.4em;
+        animation: fadeInSlideUp 0.6s ease-out;
+    }
 
-.news-banner a {
-    color: #0056b3;
-    text-decoration: none;
-}
+    .news-item {
+        opacity: 0;
+        transform: translateY(15px);
+        animation: fadeInSlideUp 0.8s ease forwards;
+    }
 
-.news-banner a:hover {
-    text-decoration: underline;
-}
+    .news-item:nth-of-type(1) {
+        animation-delay: 0.3s;
+    }
 
-.news-item {
-    margin-bottom: 0.5em;
-}
+    .news-item:nth-of-type(2) {
+        animation-delay: 0.6s;
+    }
+
+    .news-item a {
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .news-item a:hover span:first-child {
+        color: #0077cc;
+    }
+
+    @keyframes fadeInSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(15px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 </style>
 
-<div class="news-banner" style="margin-top: 2em; padding: 1.5em; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9; font-size: 0.95em; line-height: 1.6;">
-    <h2 style="margin-top: 0;">News</h2>
+<div class="news-banner">
+    <h2>News</h2>
 
     <div class="news-item" style="margin-bottom: 1em;">
-        <strong>Apr 11, 2025</strong> — 
-        <em>Deliberation.io: Experiments on Generative AI and the Future of Democracy</em> at 
-        <a href="https://isps.yale.edu/events/2025/04/conference-ai-and-democratic-governance-challenges-oversight-and-potential" target="_blank" style="text-decoration: none;">
+        <strong>Apr 11, 2025</strong> —
+        <em>Deliberation.io: Experiments on Generative AI and the Future of Democracy</em> at
+        <a href="https://isps.yale.edu/events/2025/04/conference-ai-and-democratic-governance-challenges-oversight-and-potential" target="_blank">
             <span style="font-weight: 500;">AI and Democratic Governance: Challenges, Oversight, and Potential</span>
-         </a>    
-            &nbsp;·&nbsp;
-            <span style="color: #555;">Institution for Social and Policy Studies, Yale University</span>
         </a>
+        &nbsp;·&nbsp;
+        <span style="color: #555;">Institution for Social and Policy Studies, Yale University</span>
     </div>
 
     <div class="news-item">
-        <strong>Apr 16, 2025</strong> — 
-        <em>Accountability under Polarization</em> at 
-        <a href="https://www.kellogg.northwestern.edu/events/conference/political-economy-rookiefest/" target="_blank" style="text-decoration: none;">
-            <span style="font-weight: 500;">Ford Center for Global Citizenship Political Economy Rookiefest</span> 
-        </a>    
-            &nbsp;·&nbsp;
-            <span style="color: #555;">Kellogg School of Management, Northwestern University</span>
+        <strong>Apr 16, 2025</strong> —
+        <em>Accountability under Polarization</em> at
+        <a href="https://www.kellogg.northwestern.edu/events/conference/political-economy-rookiefest/" target="_blank">
+            <span style="font-weight: 500;">Ford Center for Global Citizenship Political Economy Rookiefest</span>
+        </a>
+        &nbsp;·&nbsp;
+        <span style="color: #555;">Kellogg School of Management, Northwestern University</span>
     </div>
 </div>
 
