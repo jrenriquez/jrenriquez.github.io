@@ -33,39 +33,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     
     <style>
-        .abstract-content {
-            display: none;
-            position: absolute;
-            background: #f8f9fa;
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-            z-index: 1000;
-            width: calc(100% - 40px);
-            padding: 20px;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            margin-top: 5px;
-            top: 100%;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .abstract-content p {
-            margin: 10px 0;
-            line-height: 1.6;
-            color: #333;
-            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
-        }
-        
-        .paper-box {
-            position: relative;
-        }
-        
-        .paper-links {
-            position: relative;
-        }
-    </style>
+    .abstract-content {
+        display: none;
+        position: absolute;
+        background: #f8f9fa;
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        z-index: 1000;
+        width: calc(100% - 40px);
+        padding: 20px;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        margin-top: 5px;
+        top: 100%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .abstract-content p {
+        margin: 10px 0;
+        line-height: 1.6;
+        color: #333;
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    }
+    
+    .status-content {
+        display: none;
+        position: absolute;
+        background: #f8f9fa;
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        z-index: 1000;
+        width: calc(100% - 40px);
+        padding: 20px;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        margin-top: 5px;
+        top: 100%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .status-content p {
+        margin: 10px 0;
+        line-height: 1.6;
+        color: #333;
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    }
+    
+    .paper-box {
+        position: relative;
+    }
+    
+    .paper-links {
+        position: relative;
+    }
+</style>
+    
 </head>
 <body>
     <nav class="top-nav">
@@ -265,14 +291,13 @@
             </p>
             <div class="paper-links">
                 <button class="paper-btn status-btn" style="margin: 10px 0;">Status</button>
-                <div class="abstract-content">
+                <div class="status-content">
                     <p>Experimental design.</p>
                 </div>
-                </div>
+            </div>
         </div>
 
 
-        <div style="margin-top: 20px;"></div>
         <div class="paper-box">
             <h3 style="font-weight: normal;">Elite-driven polarization on social media</h3>
             <p class="coauthors">with 
@@ -284,15 +309,14 @@
                 <div class="abstract-content">
                     <p>Social media has been identified as a relevant factor in the global rise in political polarization. Yet, the role of political elites in this process remains unclear. Using data on mobile coverage, Facebook connections, and electoral outcomes in Mexico from 2012 to 2021, we investigate the determinants of elite-driven polarization on social media. Our findings indicate that political actors who deepened a divisive discourse during this period gained electoral benefits from increased polarization. We distinguish between mechanisms of selective exposure ("echo chambers") and diversification ("contact"), noting that electoral gains are concentrated where social media amplifies a single political voice. Conversely, exposure to an ideologically diverse network mitigates these effects. By clarifying the role of political elites and differentiating mechanisms of social media exposure, our study reconciles conflicting results in political polarization literature and offers insights into potential mitigation strategies.</p>
                 </div>
-                <button class="paper-btn status-btn" style="margin: 10px 0;">PDF forthcoming!</button>
-                <div class="abstract-content">
-                    <p>Presented at EGAP</p>
+                <button class="paper-btn status-btn" style="margin: 10px 0;">Status</button>
+                <div class="status-content">
+                    <p>PDF forthcoming! Presented at EGAP</p>
                 </div>
             </div>
         </div>
 
 
-        <div style="margin-top: 20px;"></div>
         <div class="paper-box">
             <h3 style="font-weight: normal;">AI-powered deliberation and Constitutional reform: Experimental evidence from Ghana</h3>
             <p class="coauthors">with 
@@ -301,17 +325,14 @@
             <div class="paper-links">
                 <button class="paper-btn abstract-btn" style="margin: 10px 0;">Abstract</button>
                 <div class="abstract-content">
-                <p>We will conduct randomized experiments deploying <a href="http://deliberation.io">deliberation.io</a>, an open-source AI-powered deliberation platform, to facilitate constitutional reform discussions in Ghana. Across 150,000 participants, we will estimate causal effects of AI modules on preference formation, cross-group convergence, and opinion quality under high polarization. Results will identify mechanisms enabling collective decision-making and inform cost-effective technologies for participatory development in emerging economies.</p>
+                    <p>We will conduct randomized experiments deploying <a href="http://deliberation.io">deliberation.io</a>, an open-source AI-powered deliberation platform, to facilitate constitutional reform discussions in Ghana. Across 150,000 participants, we will estimate causal effects of AI modules on preference formation, cross-group convergence, and opinion quality under high polarization. Results will identify mechanisms enabling collective decision-making and inform cost-effective technologies for participatory development in emerging economies.</p>
                 </div>          
                 <button class="paper-btn status-btn" style="margin: 10px 0;">Status</button>
-                <div class="abstract-content">
+                <div class="status-content">
                     <p>Experiment design and platform testing.</p>
                 </div>            
             </div>                
         </div>
-
-
-        
 
     </main>
 
@@ -320,6 +341,31 @@
     </footer>
 
 
+.status-content {
+    display: none;
+    position: absolute;
+    background: #f8f9fa;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    z-index: 1000;
+    width: calc(100% - 40px);
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-top: 5px;
+    top: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.status-content p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #333;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+    
 <script>
     document.querySelectorAll('.abstract-btn').forEach(button => {
         button.addEventListener('click', (e) => {
