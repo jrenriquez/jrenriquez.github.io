@@ -264,7 +264,7 @@
                 <a href="https://www.kristinekoutout.com/" class="coauthor">Kristine Koutout</a>
             </p>
             <div class="paper-links">
-                <button class="paper-btn abstract-btn" style="margin: 10px 0;">Status</button>
+                <button class="paper-btn status-btn" style="margin: 10px 0;">Status</button>
                 <div class="abstract-content">
                     <p>Experimental design.</p>
                 </div>
@@ -284,7 +284,7 @@
                 <div class="abstract-content">
                     <p>Social media has been identified as a relevant factor in the global rise in political polarization. Yet, the role of political elites in this process remains unclear. Using data on mobile coverage, Facebook connections, and electoral outcomes in Mexico from 2012 to 2021, we investigate the determinants of elite-driven polarization on social media. Our findings indicate that political actors who deepened a divisive discourse during this period gained electoral benefits from increased polarization. We distinguish between mechanisms of selective exposure ("echo chambers") and diversification ("contact"), noting that electoral gains are concentrated where social media amplifies a single political voice. Conversely, exposure to an ideologically diverse network mitigates these effects. By clarifying the role of political elites and differentiating mechanisms of social media exposure, our study reconciles conflicting results in political polarization literature and offers insights into potential mitigation strategies.</p>
                 </div>
-                <button class="paper-btn abstract-btn" style="margin: 10px 0;">PDF forthcoming!</button>
+                <button class="paper-btn status-btn" style="margin: 10px 0;">PDF forthcoming!</button>
                 <div class="abstract-content">
                     <p>Presented at EGAP</p>
                 </div>
@@ -303,7 +303,7 @@
                 <div class="abstract-content">
                 <p>We will conduct randomized experiments deploying <a href="http://deliberation.io">deliberation.io</a>, an open-source AI-powered deliberation platform, to facilitate constitutional reform discussions in Ghana. Across 150,000 participants, we will estimate causal effects of AI modules on preference formation, cross-group convergence, and opinion quality under high polarization. Results will identify mechanisms enabling collective decision-making and inform cost-effective technologies for participatory development in emerging economies.</p>
                 </div>          
-                <button class="paper-btn abstract-btn" style="margin: 10px 0;">Status</button>
+                <button class="paper-btn status-btn" style="margin: 10px 0;">Status</button>
                 <div class="abstract-content">
                     <p>Experiment design and platform testing.</p>
                 </div>            
@@ -327,15 +327,24 @@
             content.style.display = content.style.display === 'block' ? 'none' : 'block';
             e.stopPropagation();
         });
+    }); // This closing brace was missing
 
-        // Close abstract when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.abstract-content') && !e.target.closest('.abstract-btn')) {
-                document.querySelectorAll('.abstract-content').forEach(content => {
-                    content.style.display = 'none';
-                });
-            }
+    document.querySelectorAll('.status-btn').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const content = button.parentElement.querySelector('.status-content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            e.stopPropagation();
         });
+    });
+
+    // Close both abstract and status when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.abstract-content') && !e.target.closest('.abstract-btn') &&
+            !e.target.closest('.status-content') && !e.target.closest('.status-btn')) {
+            document.querySelectorAll('.abstract-content, .status-content').forEach(content => {
+                content.style.display = 'none';
+            });
+        }
     });
 </script>
 </body>
