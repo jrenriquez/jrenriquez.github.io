@@ -31,6 +31,41 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        .abstract-content {
+            display: none;
+            position: absolute;
+            background: #f8f9fa;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            z-index: 1000;
+            width: calc(100% - 40px);
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin-top: 5px;
+            top: 100%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .abstract-content p {
+            margin: 10px 0;
+            line-height: 1.6;
+            color: #333;
+            text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+        }
+        
+        .paper-box {
+            position: relative;
+        }
+        
+        .paper-links {
+            position: relative;
+        }
+    </style>
 </head>
 <body>
     <nav class="top-nav">
@@ -136,26 +171,27 @@
             <p class="journal" style="margin: 5px 0;"><em>Stanford Digital Economy Lab</em>, February 2025</p>
             <div class="paper-links">
                 <button class="paper-btn abstract-btn" style="margin: 10px 0;">Abstract</button>
-                <div class="abstract-content" style="display: none; position: absolute; background: white; z-index: 1; width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; margin-top: 5px; top: 100%;">
+                <div class="abstract-content">
                     <p>This is an opinion piece on how large language models (LLMs) are making complex data analysis available to everyone, and the risks involved. </p>
                 </div>
                 <a href="https://digitaleconomy.stanford.edu/news/democratizing-statistics-how-ai-can-empower-everyone-without-causing-disasters/" target="_blank" class="paper-btn" style="margin: 10px 0;">URL</a>
                 <a href="https://www.youtube.com/watch?v=HN4BQe-tc-c" target="_blank" class="paper-btn" style="margin: 10px 0;">Video Interview</a>
             </div>
         </div>
-</main>
+    </main>
 
-<footer style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f8f9fa; padding: 15px 0; text-align: center; border-top: 1px solid #dee2e6; box-shadow: 0 -2px 10px rgba(0,0,0,0.05);">
-    <p style="margin: 0; color: #6c757d; font-size: 0.9rem;">&copy; 2026 José Ramón Enríquez. All rights reserved.</p>
-</footer>
+    <footer style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f8f9fa; padding: 15px 0; text-align: center; border-top: 1px solid #dee2e6; box-shadow: 0 -2px 10px rgba(0,0,0,0.05);">
+        <p style="margin: 0; color: #6c757d; font-size: 0.9rem;">&copy; 2026 José Ramón Enríquez. All rights reserved.</p>
+    </footer>
 
 
-<script>
-    document.querySelectorAll('.abstract-btn').forEach(button => {
-        button.addEventListener('click', (e) => {
-            const content = button.parentElement.querySelector('.abstract-content');
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-            e.stopPropagation();
+    <script>
+        document.querySelectorAll('.abstract-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const content = button.parentElement.querySelector('.abstract-content');
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                e.stopPropagation();
+            });
         });
 
         // Close abstract when clicking outside
@@ -166,8 +202,7 @@
                 });
             }
         });
-    });
-</script>
+    </script>
 
 </body>
 </html>
